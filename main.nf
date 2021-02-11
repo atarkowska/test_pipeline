@@ -38,7 +38,8 @@ process testing_process {
   shell:
   result = 'result.txt'
   '''
-  python --version >!{result}
+  echo "!{researcher}, !{project}, !{SlideID}" >!{result}
+  python --version >>!{result}
   '''
 
 }
