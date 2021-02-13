@@ -27,8 +27,6 @@ process testing_process {
 
   publishDir path: output_dir, mode: "copy"
 
-  executor "lsf"
-
   input:
   set researcher, project, SlideID from ch_input
 
